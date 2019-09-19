@@ -1,4 +1,0 @@
-123
-I very like to use git.
-This is my second time to mofity this file.
-This is my thrid time to modify this file.
