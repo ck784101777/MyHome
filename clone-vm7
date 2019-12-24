@@ -2,7 +2,7 @@
 . /etc/init.d/functions
 CONF_DIR=/etc/libvirt/qemu
 IMG_DIR=/var/lib/libvirt/images
-BASEVM=node_tedu
+BASEVM=node
 createvm(){
  qemu-img create -f qcow2 -b ${IMG_DIR}/.${BASEVM}.qcow2 $IMG_DIR/${1}.img 30G &> /dev/null
  sed  "s/${BASEVM}/${1}/" ${IMG_DIR}/.${BASEVM}.xml > ${CONF_DIR}/${1}.xml
